@@ -1,0 +1,103 @@
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title langtag="title-login">NPS - 登录</title>
+
+    
+    
+    <link href="/static/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/static/css/solid.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+
+    
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    
+    <script src="/static/js/language.js?v=20250528" type="text/javascript"></script>
+
+</head>
+
+<body class="gray-bg">
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top navbar-right" role="navigation" style="margin: 20px 40px">
+        <div></div>
+        <h1 style="margin:0px" class="navbar-header font-bold" langtag="application">NPS</h1>
+        <span class="btn-group dropdown">
+                <button id="languagemenu" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" lang="zh-CN"><i class="fa fa-globe-asia fa-lg"></i><span> 简体中文</span></button>
+                <ul class="dropdown-menu"><li lang="zh-CN"><a><img src="/static/img/flag/zh-CN.png"> 简体中文</a></li><li lang="en-US"><a><img src="/static/img/flag/en-US.png"> English</a></li></ul>
+            </span>
+    </nav>
+</div>
+<div class="loginColumns animated fadeInDown mt-3 px-5">
+    <div class="row">
+
+        <div class="col-md-6 mt-3">
+            <h3 langtag="info-tagline">一款轻量级、高性能、功能强大的内网穿透代理服务器</h3>
+            <ul class="px-1 text-justify">
+                <li langtag="info-feature1">协议支持全面，兼容几乎所有常用协议，例如tcp、udp、http(s)、socks5、p2p、http代理...</li>
+                <li langtag="info-feature2">全平台兼容(linux、windows、macos、群辉等)，支持一键安装为系统服务</li>
+                <li langtag="info-feature3">控制全面，同时支持服务端和客户端控制</li>
+                <li langtag="info-feature4">https集成，支持将后端代理和web服务转成https，同时支持多证书</li>
+                <li langtag="info-feature5">操作简单，只需简单的配置即可在web ui上完成其余操作</li>
+                <li langtag="info-feature6">展示信息全面，流量、系统信息、即时带宽、客户端版本等</li>
+                <li langtag="info-feature7">扩展功能强大，该有的都有了（缓存、压缩、加密、流量限制、带宽限制、端口复用等等）</li>
+                <li langtag="info-feature8">域名解析具备自定义header、404页面配置、host修改、站点保护、URL路由、泛解析等功能</li>
+                <li langtag="info-feature9">服务端支持多用户和用户注册功能</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 mt-3">
+            <div class="ibox-content">
+                <form class="m-t" onsubmit="return false">
+                    <div class="form-group">
+                        <input name="username" class="form-control" placeholder="用户名" required="" langtag="word-username">
+                    </div>
+                    <div class="form-group">
+                        <input name="password" type="password" class="form-control" placeholder="密码" required="" langtag="word-password">
+                    </div>
+                    
+                    <button onclick="login()" class="btn btn-primary block full-width m-b" langtag="word-login">登录</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer" style="position: unset;">
+        <div class="pull-right">
+            <span langtag="word-readmore">更多说明</span> <strong><a href="https://ehang.io/nps" langtag="word-go">进入</a></strong>
+        </div>
+        <div><strong langtag="word-copyright">版权所有</strong> <span langtag="application">NPS</span> © 2018-2020</div>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    window.nps = {"web_base_url": "" }
+
+    
+    function login() {
+        $.ajax({
+            type: "POST",
+            url: "/login/verify",
+            data: $("form").serializeArray(),
+            success: function (res) {
+                if (res.status) {
+                    window.location.href = "/index/index"
+                } else {
+                    alert(res.msg)
+                }
+            }
+        })
+        return false
+    }
+</script>
+
+
+</body></html>

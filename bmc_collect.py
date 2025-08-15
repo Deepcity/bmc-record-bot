@@ -47,6 +47,7 @@ SELECTORS = {
         "input[type='submit']",
         "div.login-button",
         "div[role='button'].login",
+        "button.btn.btn-primaryblock.full-width.m-b",
     ],
     # 负责开始采集的按钮（div 或 button）
     "collect": [
@@ -89,7 +90,7 @@ def create_webdriver() -> "object":
         if HEADLESS:
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
-        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--window-size=1268,720")
         options.add_argument("--start-maximized")
         options.add_argument("--disable-dev-shm-usage")
         driver = Chrome(options=options)
@@ -100,7 +101,7 @@ def create_webdriver() -> "object":
     if HEADLESS:
         options.add_argument("--headless=new")
     options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--window-size=1268,720")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-dev-shm-usage")
     driver = Edge(options=options)

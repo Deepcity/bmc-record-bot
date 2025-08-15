@@ -1,0 +1,795 @@
+2025-08-15 16:35:56,266 [INFO] BMC 自动采集脚本启动
+2025-08-15 16:35:56,267 [INFO] 目标: http://192.168.1.100/
+2025-08-15 16:35:56,267 [INFO] 启动浏览器: edge (headless=False)
+2025-08-15 16:36:03,308 [INFO] 打开地址: http://192.168.1.100/
+2025-08-15 16:36:33,586 [ERROR] 执行失败: Message: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: MicrosoftEdge=139.0.3405.86)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e19da1e0]
+	(No symbol) [0x0x7ff7e19ce4bf]
+	(No symbol) [0x0x7ff7e19cfb26]
+	(No symbol) [0x0x7ff7e19ce729]
+	(No symbol) [0x0x7ff7e19ce32c]
+	(No symbol) [0x0x7ff7e19ce078]
+	(No symbol) [0x0x7ff7e19cc078]
+	(No symbol) [0x0x7ff7e19cc64c]
+	(No symbol) [0x0x7ff7e19e04ea]
+	(No symbol) [0x0x7ff7e1a67bbe]
+	(No symbol) [0x0x7ff7e1a4a7ea]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 184, in perform_bmc_collection
+    driver.get(BMC_URL)
+  File "D:\anaconda3\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 483, in get
+    self.execute(Command.GET, {"url": url})
+  File "D:\anaconda3\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "D:\anaconda3\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: MicrosoftEdge=139.0.3405.86)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e19da1e0]
+	(No symbol) [0x0x7ff7e19ce4bf]
+	(No symbol) [0x0x7ff7e19cfb26]
+	(No symbol) [0x0x7ff7e19ce729]
+	(No symbol) [0x0x7ff7e19ce32c]
+	(No symbol) [0x0x7ff7e19ce078]
+	(No symbol) [0x0x7ff7e19cc078]
+	(No symbol) [0x0x7ff7e19cc64c]
+	(No symbol) [0x0x7ff7e19e04ea]
+	(No symbol) [0x0x7ff7e1a67bbe]
+	(No symbol) [0x0x7ff7e1a4a7ea]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+2025-08-15 16:36:33,717 [ERROR] 已保存调试信息到: C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.png, C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.html (原因: Message: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: MicrosoftEdge=139.0.3405.86)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e19da1e0]
+	(No symbol) [0x0x7ff7e19ce4bf]
+	(No symbol) [0x0x7ff7e19cfb26]
+	(No symbol) [0x0x7ff7e19ce729]
+	(No symbol) [0x0x7ff7e19ce32c]
+	(No symbol) [0x0x7ff7e19ce078]
+	(No symbol) [0x0x7ff7e19cc078]
+	(No symbol) [0x0x7ff7e19cc64c]
+	(No symbol) [0x0x7ff7e19e04ea]
+	(No symbol) [0x0x7ff7e1a67bbe]
+	(No symbol) [0x0x7ff7e1a4a7ea]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+)
+2025-08-15 16:36:36,073 [INFO] 浏览器已关闭
+2025-08-15 16:36:36,074 [ERROR] 执行出错: Message: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: MicrosoftEdge=139.0.3405.86)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e19da1e0]
+	(No symbol) [0x0x7ff7e19ce4bf]
+	(No symbol) [0x0x7ff7e19cfb26]
+	(No symbol) [0x0x7ff7e19ce729]
+	(No symbol) [0x0x7ff7e19ce32c]
+	(No symbol) [0x0x7ff7e19ce078]
+	(No symbol) [0x0x7ff7e19cc078]
+	(No symbol) [0x0x7ff7e19cc64c]
+	(No symbol) [0x0x7ff7e19e04ea]
+	(No symbol) [0x0x7ff7e1a67bbe]
+	(No symbol) [0x0x7ff7e1a4a7ea]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+2025-08-15 16:37:11,222 [INFO] BMC 自动采集脚本启动
+2025-08-15 16:37:11,222 [INFO] 目标: http://47.120.18.226/
+2025-08-15 16:37:11,223 [INFO] 启动浏览器: edge (headless=False)
+2025-08-15 16:37:13,068 [INFO] 打开地址: http://47.120.18.226/
+2025-08-15 16:38:16,427 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e1a2928b]
+	(No symbol) [0x0x7ff7e1a2957b]
+	(No symbol) [0x0x7ff7e1a69b47]
+	(No symbol) [0x0x7ff7e1a4a82f]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 187, in perform_bmc_collection
+    username_input = wait_for_any_and_return(driver, SELECTORS["username"])  # 输入用户名
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 127, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e1a2928b]
+	(No symbol) [0x0x7ff7e1a2957b]
+	(No symbol) [0x0x7ff7e1a69b47]
+	(No symbol) [0x0x7ff7e1a4a82f]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 16:38:16,582 [ERROR] 已保存调试信息到: C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.png, C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.html (原因: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e1a2928b]
+	(No symbol) [0x0x7ff7e1a2957b]
+	(No symbol) [0x0x7ff7e1a69b47]
+	(No symbol) [0x0x7ff7e1a4a82f]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+)
+2025-08-15 16:38:18,870 [INFO] 浏览器已关闭
+2025-08-15 16:38:18,870 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1cbe785+22117]
+	(No symbol) [0x0x7ff7e1c0ee00]
+	GetHandleVerifier [0x0x7ff7e1f44c2c+2669324]
+	(No symbol) [0x0x7ff7e1a2928b]
+	(No symbol) [0x0x7ff7e1a2957b]
+	(No symbol) [0x0x7ff7e1a69b47]
+	(No symbol) [0x0x7ff7e1a4a82f]
+	(No symbol) [0x0x7ff7e1a1f68d]
+	(No symbol) [0x0x7ff7e1a6762f]
+	(No symbol) [0x0x7ff7e1a4a553]
+	(No symbol) [0x0x7ff7e1a1eb86]
+	(No symbol) [0x0x7ff7e1a1de11]
+	(No symbol) [0x0x7ff7e1a1e9b3]
+	(No symbol) [0x0x7ff7e1b1907d]
+	(No symbol) [0x0x7ff7e1b25fe8]
+	GetHandleVerifier [0x0x7ff7e1d9f277+942423]
+	GetHandleVerifier [0x0x7ff7e1da8221+979201]
+	(No symbol) [0x0x7ff7e1c1c3b1]
+	(No symbol) [0x0x7ff7e1c14d64]
+	(No symbol) [0x0x7ff7e1c14eb3]
+	(No symbol) [0x0x7ff7e1c07016]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 16:39:26,686 [INFO] BMC 自动采集脚本启动
+2025-08-15 16:39:26,687 [INFO] 目标: http://47.120.18.226/
+2025-08-15 16:39:26,687 [INFO] 启动浏览器: chrome (headless=False)
+2025-08-15 16:39:43,982 [INFO] 打开地址: http://47.120.18.226/
+2025-08-15 16:39:55,152 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458bf1c]
+	(No symbol) [0x0x7ff6c45d327f]
+	(No symbol) [0x0x7ff6c460b002]
+	(No symbol) [0x0x7ff6c4605b23]
+	(No symbol) [0x0x7ff6c4604be9]
+	(No symbol) [0x0x7ff6c4556fd5]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	(No symbol) [0x0x7ff6c4555fd1]
+	GetHandleVerifier [0x0x7ff6c4bce428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 187, in perform_bmc_collection
+    username_input = wait_for_any_and_return(driver, SELECTORS["username"])  # 输入用户名
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 127, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458bf1c]
+	(No symbol) [0x0x7ff6c45d327f]
+	(No symbol) [0x0x7ff6c460b002]
+	(No symbol) [0x0x7ff6c4605b23]
+	(No symbol) [0x0x7ff6c4604be9]
+	(No symbol) [0x0x7ff6c4556fd5]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	(No symbol) [0x0x7ff6c4555fd1]
+	GetHandleVerifier [0x0x7ff6c4bce428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 16:39:55,157 [ERROR] 保存调试信息失败: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458bf1c]
+	(No symbol) [0x0x7ff6c45d327f]
+	(No symbol) [0x0x7ff6c460b002]
+	(No symbol) [0x0x7ff6c4605b23]
+	(No symbol) [0x0x7ff6c4604be9]
+	(No symbol) [0x0x7ff6c4556fd5]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	(No symbol) [0x0x7ff6c4555fd1]
+	GetHandleVerifier [0x0x7ff6c4bce428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+2025-08-15 16:39:57,189 [INFO] 浏览器已关闭
+2025-08-15 16:39:57,190 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['input#username', "input[name='username']", "input[name='user']", "input[type='text']"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458bf1c]
+	(No symbol) [0x0x7ff6c45d327f]
+	(No symbol) [0x0x7ff6c460b002]
+	(No symbol) [0x0x7ff6c4605b23]
+	(No symbol) [0x0x7ff6c4604be9]
+	(No symbol) [0x0x7ff6c4556fd5]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	(No symbol) [0x0x7ff6c4555fd1]
+	GetHandleVerifier [0x0x7ff6c4bce428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 16:48:32,906 [INFO] BMC 自动采集脚本启动
+2025-08-15 16:48:32,906 [INFO] 目标: https://nps.keboe.cn/login/index
+2025-08-15 16:48:32,908 [INFO] 启动浏览器: chrome (headless=False)
+2025-08-15 16:48:35,461 [INFO] 打开地址: https://nps.keboe.cn/login/index
+2025-08-15 16:50:05,417 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458c0ea]
+	(No symbol) [0x0x7ff6c45e2f56]
+	(No symbol) [0x0x7ff6c45e320c]
+	(No symbol) [0x0x7ff6c46365b7]
+	(No symbol) [0x0x7ff6c460b17f]
+	(No symbol) [0x0x7ff6c46333d0]
+	(No symbol) [0x0x7ff6c460af13]
+	(No symbol) [0x0x7ff6c45d4151]
+	(No symbol) [0x0x7ff6c45d4ee3]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	GetHandleVerifier [0x0x7ff6c47ff914+115956]
+	GetHandleVerifier [0x0x7ff6c47ffac9+116393]
+	GetHandleVerifier [0x0x7ff6c47e5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 195, in perform_bmc_collection
+    find_and_click_first(driver, SELECTORS["login"])  # 点击登录
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 159, in find_and_click_first
+    element = wait_for_any_and_return(driver, css_selectors, timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 127, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458c0ea]
+	(No symbol) [0x0x7ff6c45e2f56]
+	(No symbol) [0x0x7ff6c45e320c]
+	(No symbol) [0x0x7ff6c46365b7]
+	(No symbol) [0x0x7ff6c460b17f]
+	(No symbol) [0x0x7ff6c46333d0]
+	(No symbol) [0x0x7ff6c460af13]
+	(No symbol) [0x0x7ff6c45d4151]
+	(No symbol) [0x0x7ff6c45d4ee3]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	GetHandleVerifier [0x0x7ff6c47ff914+115956]
+	GetHandleVerifier [0x0x7ff6c47ffac9+116393]
+	GetHandleVerifier [0x0x7ff6c47e5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 16:50:05,612 [ERROR] 已保存调试信息到: C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.png, C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.html (原因: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458c0ea]
+	(No symbol) [0x0x7ff6c45e2f56]
+	(No symbol) [0x0x7ff6c45e320c]
+	(No symbol) [0x0x7ff6c46365b7]
+	(No symbol) [0x0x7ff6c460b17f]
+	(No symbol) [0x0x7ff6c46333d0]
+	(No symbol) [0x0x7ff6c460af13]
+	(No symbol) [0x0x7ff6c45d4151]
+	(No symbol) [0x0x7ff6c45d4ee3]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	GetHandleVerifier [0x0x7ff6c47ff914+115956]
+	GetHandleVerifier [0x0x7ff6c47ffac9+116393]
+	GetHandleVerifier [0x0x7ff6c47e5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+)
+2025-08-15 16:50:07,903 [INFO] 浏览器已关闭
+2025-08-15 16:50:07,903 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c47f6b25+79621]
+	GetHandleVerifier [0x0x7ff6c47f6b80+79712]
+	(No symbol) [0x0x7ff6c458c0ea]
+	(No symbol) [0x0x7ff6c45e2f56]
+	(No symbol) [0x0x7ff6c45e320c]
+	(No symbol) [0x0x7ff6c46365b7]
+	(No symbol) [0x0x7ff6c460b17f]
+	(No symbol) [0x0x7ff6c46333d0]
+	(No symbol) [0x0x7ff6c460af13]
+	(No symbol) [0x0x7ff6c45d4151]
+	(No symbol) [0x0x7ff6c45d4ee3]
+	GetHandleVerifier [0x0x7ff6c4ab683d+2962461]
+	GetHandleVerifier [0x0x7ff6c4ab0b5d+2938685]
+	GetHandleVerifier [0x0x7ff6c4acf71d+3064573]
+	GetHandleVerifier [0x0x7ff6c4810c6e+186446]
+	GetHandleVerifier [0x0x7ff6c4818a3f+218655]
+	GetHandleVerifier [0x0x7ff6c47ff914+115956]
+	GetHandleVerifier [0x0x7ff6c47ffac9+116393]
+	GetHandleVerifier [0x0x7ff6c47e5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:02:38,047 [INFO] BMC 自动采集脚本启动
+2025-08-15 17:02:38,048 [INFO] 目标: https://nps.keboe.cn/login/index
+2025-08-15 17:02:38,048 [INFO] 启动浏览器: chrome (headless=False)
+2025-08-15 17:02:40,377 [INFO] 打开地址: https://nps.keboe.cn/login/index
+2025-08-15 17:03:03,925 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64bf1c]
+	(No symbol) [0x0x7ff75e69327f]
+	(No symbol) [0x0x7ff75e6cb002]
+	(No symbol) [0x0x7ff75e6c5b23]
+	(No symbol) [0x0x7ff75e6c4be9]
+	(No symbol) [0x0x7ff75e616fd5]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	(No symbol) [0x0x7ff75e615fd1]
+	GetHandleVerifier [0x0x7ff75ec8e428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 195, in perform_bmc_collection
+    find_and_click_first(driver, SELECTORS["login"])  # 点击登录
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 159, in find_and_click_first
+    element = wait_for_any_and_return(driver, css_selectors, timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 127, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64bf1c]
+	(No symbol) [0x0x7ff75e69327f]
+	(No symbol) [0x0x7ff75e6cb002]
+	(No symbol) [0x0x7ff75e6c5b23]
+	(No symbol) [0x0x7ff75e6c4be9]
+	(No symbol) [0x0x7ff75e616fd5]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	(No symbol) [0x0x7ff75e615fd1]
+	GetHandleVerifier [0x0x7ff75ec8e428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:03:03,936 [ERROR] 保存调试信息失败: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64bf1c]
+	(No symbol) [0x0x7ff75e69327f]
+	(No symbol) [0x0x7ff75e6cb002]
+	(No symbol) [0x0x7ff75e6c5b23]
+	(No symbol) [0x0x7ff75e6c4be9]
+	(No symbol) [0x0x7ff75e616fd5]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	(No symbol) [0x0x7ff75e615fd1]
+	GetHandleVerifier [0x0x7ff75ec8e428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+2025-08-15 17:03:05,973 [INFO] 浏览器已关闭
+2025-08-15 17:03:05,974 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login"]. 最后错误: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64bf1c]
+	(No symbol) [0x0x7ff75e69327f]
+	(No symbol) [0x0x7ff75e6cb002]
+	(No symbol) [0x0x7ff75e6c5b23]
+	(No symbol) [0x0x7ff75e6c4be9]
+	(No symbol) [0x0x7ff75e616fd5]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	(No symbol) [0x0x7ff75e615fd1]
+	GetHandleVerifier [0x0x7ff75ec8e428+4108296]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:03:34,005 [INFO] BMC 自动采集脚本启动
+2025-08-15 17:03:34,006 [INFO] 目标: https://nps.keboe.cn/login/index
+2025-08-15 17:03:34,007 [INFO] 启动浏览器: chrome (headless=False)
+2025-08-15 17:03:35,766 [INFO] 打开地址: https://nps.keboe.cn/login/index
+2025-08-15 17:05:13,040 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 196, in perform_bmc_collection
+    find_and_click_first(driver, SELECTORS["login"])  # 点击登录
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 160, in find_and_click_first
+    element = wait_for_any_and_return(driver, css_selectors, timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 128, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:05:13,255 [ERROR] 已保存调试信息到: C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.png, C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.html (原因: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+)
+2025-08-15 17:05:15,457 [INFO] 浏览器已关闭
+2025-08-15 17:05:15,458 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:06:21,172 [INFO] BMC 自动采集脚本启动
+2025-08-15 17:06:21,173 [INFO] 目标: https://nps.keboe.cn/login/index
+2025-08-15 17:06:21,173 [INFO] 启动浏览器: chrome (headless=False)
+2025-08-15 17:06:23,519 [INFO] 打开地址: https://nps.keboe.cn/login/index
+2025-08-15 17:08:01,584 [ERROR] 执行失败: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+Traceback (most recent call last):
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 196, in perform_bmc_collection
+    find_and_click_first(driver, SELECTORS["login"])  # 点击登录
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 160, in find_and_click_first
+    element = wait_for_any_and_return(driver, css_selectors, timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect.py", line 128, in wait_for_any_and_return
+    raise TimeoutException(f"未找到以下任一选择器: {css_selectors}. 最后错误: {last_exc}")
+selenium.common.exceptions.TimeoutException: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+
+2025-08-15 17:08:01,814 [ERROR] 已保存调试信息到: C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.png, C:\Users\Deepcity\OneDrive\xmu\Huawei-HBM-MarchTesting\scheduler\bmc_collect_last.html (原因: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+)
+2025-08-15 17:08:04,044 [INFO] 浏览器已关闭
+2025-08-15 17:08:04,044 [ERROR] 执行出错: Message: 未找到以下任一选择器: ['button#login', "button[type='submit']", "input[type='submit']", 'div.login-button', "div[role='button'].login", 'button.btn.btn-primaryblock.full-width.m-b']. 最后错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75e8b6b25+79621]
+	GetHandleVerifier [0x0x7ff75e8b6b80+79712]
+	(No symbol) [0x0x7ff75e64c0ea]
+	(No symbol) [0x0x7ff75e6a2f56]
+	(No symbol) [0x0x7ff75e6a320c]
+	(No symbol) [0x0x7ff75e6f65b7]
+	(No symbol) [0x0x7ff75e6cb17f]
+	(No symbol) [0x0x7ff75e6f33d0]
+	(No symbol) [0x0x7ff75e6caf13]
+	(No symbol) [0x0x7ff75e694151]
+	(No symbol) [0x0x7ff75e694ee3]
+	GetHandleVerifier [0x0x7ff75eb7683d+2962461]
+	GetHandleVerifier [0x0x7ff75eb70b5d+2938685]
+	GetHandleVerifier [0x0x7ff75eb8f71d+3064573]
+	GetHandleVerifier [0x0x7ff75e8d0c6e+186446]
+	GetHandleVerifier [0x0x7ff75e8d8a3f+218655]
+	GetHandleVerifier [0x0x7ff75e8bf914+115956]
+	GetHandleVerifier [0x0x7ff75e8bfac9+116393]
+	GetHandleVerifier [0x0x7ff75e8a5ef8+10968]
+	BaseThreadInitThunk [0x0x7fffdb0be8d7+23]
+	RtlUserThreadStart [0x0x7fffdcb5c34c+44]
+
+

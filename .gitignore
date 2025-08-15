@@ -1,0 +1,5 @@
+./venv
+./__pycache__
+./bmc_collect_last.png
+./bmc_collect_last.html
+./bmc_collect_last.log
